@@ -30,6 +30,29 @@
         0 1.5px 0 hsla(240, calc(var(--saturation-factor, 1) * 8%), 25%, 0.05),
         0 2px 0 hsla(240, calc(var(--saturation-factor, 1) * 11%), 18%, 0.05);
 }
+ --hidden-user-width: 60px;
+  --user-width: 240px;
+}
+
+.membersWrap-3NUR2t {
+  transition-duration: .4s;
+  justify-content: unset;
+  min-width: unset;
+  width: var(--hidden-user-width);
+}
+
+.membersGroup-2eiWxl {
+  height: 0px;
+  transition-duration: .4s;
+}
+
+.membersWrap-3NUR2t:hover .membersGroup-2eiWxl{
+  height: 40px;
+}
+
+.membersWrap-3NUR2t:hover {
+  width: var(--user-width);
+}
 
 #app-mount .layer-86YKbF .item-4m-12I[aria-checked=false]:not(:hover) {
     background-color: var(--background-tertiary);
